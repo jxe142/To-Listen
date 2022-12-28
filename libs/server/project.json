@@ -18,6 +18,12 @@
         "jestConfig": "libs/server/jest.config.ts",
         "passWithNoTests": true
       }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "yarn nodemon libs/server/src/server.ts" 
+      }
     }
   },
   "tags": []
